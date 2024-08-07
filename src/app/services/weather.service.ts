@@ -12,10 +12,10 @@ export class WeatherService {
   }
 
   getWeatherData(cityName: String) {
-    this.http.get(environment.weatherApiBaseUrl, {
+    return this.http.get((environment as any).weatherApiBaseUrl, {
       headers : new HttpHeaders()
-      .set(environment.xRapidAPIHostHeaderName, environment.xRapidAPIHostHeaderValue)
-      .set(environment.xRapidApiKeyHeaderName, environment.xRapidApiKeyHeaderValue),
+      .set((environment as any).xRapidAPIHostHeaderName, (environment as any).xRapidAPIHostHeaderValue)
+      .set((environment as any).xRapidApiKeyHeaderName, (environment as any).xRapidApiKeyHeaderValue),
       params: new HttpParams()
       .set('city', cityName.toString())
       .set('lang', 'EN')

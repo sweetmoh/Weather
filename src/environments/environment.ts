@@ -1,6 +1,6 @@
 export const environment = {
     production: false,
-    weatherApiBaseUrl: 'https://open-weather13.p.rapidapi.com',
+    weatherApiBaseUrl: 'https://open-weather13.p.rapidapi.com/city/landon/EN',
     xRapidAPIHostHeaderName: 'x-rapidapi-key',
     xRapidAPIHostHeaderValue: 'open-weather13.p.rapidapi.com', 
     xRapidApiKeyHeaderName: 'x-rapidapi-host',
